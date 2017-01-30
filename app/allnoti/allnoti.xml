@@ -1,0 +1,16 @@
+<stack-layout loaded="onViewLoaded" unloaded="onViewUnloaded"
+xmlns:lv="nativescript-telerik-ui/listview" >
+  <!-- entirety of the tab's content -->
+  <GridLayout>
+  <!--<Label text="custom component" textWrap="true" />-->
+  
+    <ListView items="{{notificationList}}">
+      <ListView.itemTemplate>
+        <stack-layout>
+          <label text="{{title}}" horizontalAlignment="left" verticalAlignment="center" />
+          <label text="{{body}}" horizontalAlignment="left" verticalAlignment="center" />
+        </stack-layout>
+      </ListView.itemTemplate>
+    </ListView>
+  </GridLayout>
+</stack-layout>
